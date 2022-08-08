@@ -1,0 +1,106 @@
+body {
+  background-color: #0082fe;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.banner {
+  background-color: #0068cc;
+  height: 80px;
+  width: 100vw;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.title {
+  line-height: 25px;
+}
+
+.credit {
+  background-color: #0068cc;
+  font-size: 13px;
+  text-align: center;
+}
+
+.credit a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#elements {
+  margin-top: 60px;
+}
+
+.alert-danger {
+  --bs-alert-color: #ffffff;
+  --bs-alert-bg: #dc3545;
+  --bs-alert-border-color: transparent;
+}
+
+.form-control {
+  background-color: #1a1b1e;
+  border: 1px solid #25262b;
+  color: #ffffff;
+}
+
+.form-control:focus {
+  background-color: #1a1b1e;
+  border-color: #25262b;
+  box-shadow: 0 0 0 0.25rem rgba(18, 18, 18, 0.25);
+  color: #ffffff;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #1a1b1e;
+}
+
+#console {
+  background-color: #1a1b1e;
+  border-radius: 10px;
+  border: 8px solid #1a1b1e;
+  color: #ffffff;
+  font-size: 12px;
+  height: 190px;
+  resize: none;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d3e46;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #313239;
+}
+
+.modal-content {
+  background-color: #1a1b1e;
+  color: #ffffff;
+}
+
+.modal-header {
+  border-bottom: 1px solid #1a1b1e;
+}
+
+.modal-footer {
+  border-top: 1px solid #1a1b1e;
+}
+
+.example {
+  border-radius: 10px;
+  width: 100%;
+}
