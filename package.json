@@ -1,0 +1,41 @@
+{
+  "name": "css-content-installer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CS:S Content Installer",
+  "author": "Tomsci",
+  "scripts": {
+    "start": "electron index.js",
+    "build": "electron-builder --x64 --ia32",
+    "build-ia32": "electron-builder --ia32",
+    "build-x64": "electron-builder --x64"
+  },
+  "dependencies": {
+    "extract-zip": "^2.0.1",
+    "fs-extra": "^10.1.0",
+    "regedit": "^5.1.1",
+    "superagent": "^8.0.0",
+    "vdf": "^0.0.2"
+  },
+  "devDependencies": {
+    "electron": "^13.1.1",
+    "electron-builder": "^22.10.5"
+  },
+  "build": {
+    "appId": "css-content-installer",
+    "productName": "CS:S Content Installer",
+    "win": {
+      "target": "portable",
+      "icon": "assets/icon.ico"
+    },
+    "extraResources": [
+      {
+        "from": "node_modules/regedit/vbs",
+        "to": "regedit/vbs",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  }
+}
